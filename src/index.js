@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 // Connect to SQLite database
-const db = new sqlite3.Database('./dua_main.sqlite', (err) => {
+const db = new sqlite3.Database('dua_main.sqlite', (err) => {
     if (err) {
         console.error('Error opening database:', err.message);
     } else {
